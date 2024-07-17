@@ -135,8 +135,8 @@ body {
 
 .card-container .card-img-container {
     border-radius: 5px;
-    width: 18.75rem;
-    height: 16rem;
+    max-width: 18.75rem;
+    max-height: 16rem;
 }
 
 .card-container .card-img-container img {
@@ -213,5 +213,12 @@ body {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+}
 
+/* Medium Device: 576px to 992 px  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .collection-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
