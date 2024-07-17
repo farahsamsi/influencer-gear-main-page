@@ -22,43 +22,101 @@
     font-style: normal;
 }
 
-body{
-    max-width: 1140px;
+body {
+    max-width: 90%;
     margin: 1rem auto;
 }
 
-/* navbar related styles */
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
+.dark {
+    color: rgb(58, 58, 58);
 }
 
-.nav-container h3{
+/* navbar related styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h3 {
     font-weight: 700;
     font-size: 1.5rem;
 }
-.nav-container p{
+
+.nav-container p {
     font-weight: 600;
     font-size: 1rem;
 }
-.nav-options{
+
+.nav-options {
     display: flex;
     gap: 2rem;
 }
 
+/* banner related styles */
+.banner-container {
+    display: flex;
+    gap: 10%;
+}
+
+.banner-container .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner-container .img-container {
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-container .img-container img{
+    width: 100%;
+}
+
+.banner-container h1 {
+    margin: 0;
+}
+
+.banner-container button {
+    padding: 10px 24px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    border: none;
+    line-height: 1.5rem;
+}
+
+.banner-container button i{
+    margin-left: .5rem;
+}
+
+
+
 
 
 @media screen and (max-width:576px) {
-    .nav-container{
+    .nav-container {
         flex-direction: column;
     }
-    .nav-options{
+
+    .nav-options {
         gap: 1rem;
     }
-    .nav-container h3{
+
+    .nav-container h3 {
         margin: 1rem auto;
     }
-    
-}
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-container .text-container{
+        text-align: center;
+        align-items: center;
+    }
 
+}
