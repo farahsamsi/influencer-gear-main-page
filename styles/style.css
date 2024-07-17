@@ -21,3 +21,43 @@
     font-weight: 400;
     font-style: normal;
 }
+
+body{
+    max-width: 1140px;
+}
+
+/* navbar related styles */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.nav-container h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.nav-container p{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.nav-options{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-options{
+        gap: 1rem;
+    }
+    .nav-container h3{
+        margin: 1rem auto;
+    }
+    
+}
+
