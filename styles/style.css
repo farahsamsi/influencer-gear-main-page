@@ -217,6 +217,15 @@ body {
 
 /* Medium Device: 576px to 992 px  */
 @media screen and (min-width:576px) and (max-width:992px) {
+    .marketing-links-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .marketing-links-container img {
+        width: 20%;
+    }
+
     .collection-cards-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
