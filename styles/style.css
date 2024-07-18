@@ -82,19 +82,21 @@ body {
 .banner-container h1 {
     margin: 0;
 }
-
 .banner-container button {
+    border-radius: 41px;
+}
+
+button {
     padding: 10px 24px;
     color: rgb(255, 255, 255);
     font-weight: 700;
-    border-radius: 41px;
     background: rgb(224, 44, 109);
     border: none;
     line-height: 1.5rem;
     cursor: pointer;
 }
 
-.banner-container button i {
+button i {
     margin-left: .5rem;
 }
 
@@ -176,6 +178,39 @@ body {
     text-align: left;
 }
 
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-container .featured-text-container {
+    max-width: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.featured-container .featured-text-container h3 {
+    font-size: 2.375rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.featured-container .featured-text-container p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.featured-container .featured-img-container {
+    max-width: 404px;
+}
+.featured-container .featured-img-container img {
+    width: 100%;
+}
+
+
 
 
 @media screen and (max-width:576px) {
@@ -191,14 +226,19 @@ body {
         margin: 1rem auto;
     }
 
-    .banner-container {
+    .banner-container, .featured-container {
         flex-direction: column-reverse;
     }
 
-    .banner-container .text-container {
+    .banner-container .text-container, .featured-container .featured-text-container {
         text-align: center;
         align-items: center;
     }
+
+    .featured-container .featured-text-container{
+        margin-bottom: 2rem;
+    }
+    
 
     .marketing-links-container {
         flex-wrap: wrap;
@@ -230,4 +270,19 @@ body {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+    .featured-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .featured-container .featured-text-container {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .featured-container .featured-img-container{
+        max-width: 100%;
+    }
+    
 }
